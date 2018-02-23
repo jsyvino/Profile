@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JSyvino</title>
+
+<link rel='stylesheet' type='text/css' href= 'style.css'>
+<link rel='stylesheet' type='text/css' href= 'bootstrap.css'>
+<link <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+<link <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+  </head>
+  <body>
+    <div id= 'nav-bar'>
+      <div id='headers'>
+        <a href="#top"><h1 id='title'>Jaime Syvino</h1></a>
+        <a href= 'https://www.linkedin.com/in/jaime-syvino-engineer' target="_blank"><input id='linkedin' 
+          class= 'button' type="image" src="img/linkedin_icon.png" /></a>
+        <a href= 'https://medium.com/@jsyvino' target="_blank"><input id='medium' class= 'button' 
+          type="image" src="img/medium icon.png" /></a>
+        <a href="#contact"><h4 id= 'contact-lnk' class= 'link button'>Contact</h4></a>
+        <a href="#projects"><h4 id= 'project-lnk' class= 'link button'>Projects</h4></a>
+        <a href="#aboutme"><h4 id= 'about-lnk' class= 'link button'>About Me</h4></a>
+      </div>
+    </div>
+
+    <div class= 'summary'>
+        <img id= 'profpic' src='img/profile.jpg'></img>
+        <h1 id='myname' class= 'stroke'>Jaime Lynn Syvino</h1> 
+        <h2 id= 'position' class= 'stroke'>Software Engineer in the Chicagoland Area</h2>  
+    </div>
+
+    <div id= 'aboutme'>
+      <h2>About Me</h2>
+      <p>I am a chemical engineer turned programmer.  I have extensive experience in 
+        troubleshooting, logic-based problem solving and root cause analysis.  I have 
+        successfully managed many complex projects with budgets up to $3MM.  I am passionate 
+        about finding creative solutions to challenging problems to increase the efficiency 
+        of any given process.  I am new to the world of coding but I am eager to utilize my 
+        engineering training and experience into the medium of software and web development.</p>
+      <p id= 'funfacts'>If you would like to learn about some of my personal interests, I have 
+          included some fun facts.</p>
+      <h4 class= 'funfact'>Fun Facts</h4>
+      <div class= 'row padding-0'>
+          <div class= 'col-sm-8 padding-0' id='list'>
+          <ul class= 'funfact'>
+              <li id= 'cornell' class = 'fact'>I graduated from Cornell University in 2008</li>
+              <li id= 'newro' class = 'fact'>I am originally from the suburbs of New York City</li>
+              <li id= 'dogs' class = 'fact'>I have 2 pretty awesome dogs</li>
+              <li id= 'cubs' class = 'fact'>I went to game 7 of the 2016 World Series (go Cubbies!)</li>
+              <li id= 'boston' class = 'fact'>I once walked from New York City to Boston</li>
+              <li id= 'rugby' class = 'fact'>I played in an International Rugby Tournament in Kenya</li>
+              <li id= 'ender' class = 'fact'>My favorite book is Ender's Game</li>
+              <li id= 'glacier' class = 'fact'>I went to Glacier National Park for my honeymoon</li>
+              <li id= 'bike' class = 'fact'>I rode my bike from San Francisco to LA</li>
+          </ul>
+        </div>
+        <div class= 'col-sm-4 padding-0'>
+          <img id= 'factpic' src= '#'>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div id= 'projects'>
+      <h2>Recent Projects</h2>
+      <div class='row'>
+        <div class= 'col-sm-4 button'>
+          <a href= 'https://jsyvino.github.io/GuessingGame-Final/' target="_blank"><h4 class= 'projname'>Guessing Game</h4>
+          <img class = 'img-responsive' src= 'img/guessing game.png'></a>
+        </div>
+        <div class= 'col-sm-4 button'>
+            <h4 class= 'projname'>Project #2</h4>
+            <img class = 'img-responsive' src= 'img/fake proj.jpg'>
+          </div>
+      </div>
+    </div>
+
+    <div id= 'contact'>
+      <h2>Contact Information</h2>
+      <p>Email me at: 
+      <a href="mailto:JSyvino@gmail.com?subject=Re:%20Your%20Website">JSyvino@gmail.com</a>
+      </p>
+     <!-- <div class="container">
+          <form action="action_page.php">
+        
+            <label for="name">First and Last Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+        
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Your email address" 
+            autocomplete="on" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(###) ###-####"> -->
+        
+            <!--<label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>-->
+        
+           <!-- <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Brief description on what this is regarding"></textarea>
+        
+            <input type="submit" value="Submit" class= 'button'>
+        
+          </form>
+        </div>
+    </div> -->
+
+
+    <div id='footer' class= 'center'>
+        <h6>Jaime Syvino 2018</h6>
+    </div>
+
+    <script src= "jquery.js"></script>
+    <script src= "Profile.js"></script>
+
+  </body>
+</html>
+
+     <!-- <div id='app' class='center container'>
+
+        <div id='headers'>
+          <h1 id='title'>Play the Mystery Number Game!</h1> 
+          <h2 id= 'subtitle'>Guess a number between 1 and 100...good luck!</h2> 
+        </div>
+
+        <div id='main'>
+          <div id='input-parent'>
+            <input id='player-input' type="number" placeholder="Give it a go" maxlength = '3'</input>
+            <button id='submit'>...and Go! </button>
+            <img id= 'losing' src= 'wompwomp.gif'></img>
+          </div>
+
+          <div id='guesses'>
+            
+            <p>
+              <ul id= 'guess-list'>
+                <li class = 'guess'>-</li>
+              </ul>
+            </p>
+          </div>
+
+          <div id="menu-btns">
+            
+            <button id= "reset">Start Over</button>
+            <button id = 'hint'>Need a Hint?</button>
+            <h4 id= 'hint-reminder'>'C'mon, you know you want one!</h4>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div id='footer' class= 'center'>
+        <div class = 'row'>
+          <div class= 'col-sm-4'>
+            <img src='fa-logo@2x.png'></img>
+          </div>
+
+          <div class= 'col-sm-4'>
+            <h6>A Jaime Syvino Jam <br> <img src='Avery.png'></img> </h6>      
+            
+          </div>
+
+          <div class= 'col-sm-4'>
+            <img   src='grace_hopper_academy.png'></img>
+          </div>
+
+
+        </div>
+    </div>
+    <script src= "jquery.js"></script>
+    <script src= "GuessingGame.js"></script>
+  </body>
+</html>-->

@@ -1,0 +1,496 @@
+.button:active{
+    transform: translateY(2px)
+}
+
+/*Nav bar section*/
+#nav-bar{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    font-variant: small-caps;
+    vertical-align: middle;
+    color: white;
+    z-index:1;
+}
+#title{
+    font-family: 'CarroisGothicSC-Regular', "Helvetica Neue", Arial, sans-serif;
+    font-weight: bolder;
+    display: inline-block;
+    color: white;
+    margin: 3px 15px 5px 10px;
+    float: left;
+}
+.link{
+    margin: 11px 15px auto;
+    float: right;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    font-family: 'FrederickatheGreat-Regular', "Helvetica Neue", Arial, sans-serif;
+}
+.link:hover{
+    color: rgb(0, 180, 180);
+}
+
+#linkedin, #medium{
+    float: left;
+    margin: 10px 5px auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    border: solid 2px;
+    border-color: rgb(0, 0, 0);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#medium{
+    background: white;
+}
+#linkedin:hover, #medium:hover{
+    border: solid 3px; 
+    border-color: rgb(29, 255, 21);
+}
+#linkedin:active, #medium:active{
+    border: solid 2px;  
+    transform: translateY(4px); 
+    border-color: rgb(29, 255, 21);
+}
+
+/*top profile pis section*/
+.summary{
+    font-family: 'CarroisGothicSC-Regular', "Helvetica Neue", Arial, sans-serif;
+    font-weight: 900;
+    padding-top: 70px;
+    background-image: url('img/glacier.jpg'); 
+    background-size: cover;
+    background-position-y: bottom;
+    padding-bottom: 30px;
+}
+.summary h1, .summary h2{
+    margin: 10px 0;
+}
+#profpic {
+    width: auto;
+    height: 350px;
+    border-radius: 50px;
+    border: solid 8px;
+    border-color: white;
+    display: block;
+    margin: 10px auto 30px;
+}
+#myname, #position{
+    text-align: center; 
+    font-variant: small-caps;
+} 
+
+/*About Me section*/
+#aboutme{
+    padding: 30px 20px 0;
+    font-family: 'FrederickatheGreat-Regular', "Helvetica Neue", Arial, sans-serif;
+}
+#aboutme p{
+    font-family: 'NixieOne-Regular', "Helvetica Neue", Arial, sans-serif;
+    display: inline-block;
+}
+#aboutme h4{
+    margin: 10px 0;
+}
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+.fact{
+    font-family: 'NixieOne-Regular', "Helvetica Neue", Arial, sans-serif;
+}
+#funfacts:hover{
+    font-style: oblique;
+}
+.funfact{
+    display: none;
+}
+#factpic{
+    margin-top: -20px;
+    float: left;
+    vertical-align: top;
+    display: none;
+    height: 240px;
+    width: auto;
+}
+
+/*Projects section*/
+#projects{
+    font-family: 'CarroisGothicSC-Regular', "Helvetica Neue", Arial, sans-serif;
+    text-align: center;
+    padding: 30px 20px 0;
+    color: black;
+}
+.projname{
+    margin: 0 auto 15px;
+    font-weight: bolder;
+}
+.img-responsive{
+    max-width: 100%; 
+    height: auto;
+}
+#projects h2{
+    text-align: left;
+    font-family: 'FrederickatheGreat-Regular', "Helvetica Neue", Arial, sans-serif;
+}
+#projects h4{
+    color: black;
+}
+#projects [href]:hover, #projects h4:hover{
+    color: rgb(0, 180, 180);
+}
+#projects img:hover{
+    border: solid 4px;
+    border-color: rgb(0, 180, 180);
+}
+/*#projects .col-sm-4:active{
+    transform: translateY(2px); 
+}*/
+
+/*Contact section*/
+#contact{
+    padding: 30px 20px 50px;
+    font-family: 'FrederickatheGreat-Regular', "Helvetica Neue", Arial, sans-serif;
+}
+#contact p{
+    font-family: 'NixieOne-Regular', "Helvetica Neue", Arial, sans-serif;
+}
+/* Style inputs with type="text", select elements and textareas */
+.container input, select, #name{
+    text-align: left;
+    font-family: 'NixieOne-Regular', "Helvetica Neue", Arial, sans-serif;
+    font-variant: small-caps;
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+#subject{
+    font-family: 'NixieOne-Regular', "Helvetica Neue", Arial, sans-serif;
+    font-variant: small-caps;
+    height: 100px;
+    width: 100%;
+}
+
+/* Style the submit button with a specific background color etc */
+.container input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;    
+    font-weight: bolder;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+.container input[type=submit]:hover {
+    background-color: #45a049;
+}
+.container input[type=submit]:active {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/*footer section*/
+#footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px 0;
+    vertical-align: middle;
+}
+#footer h6{
+    font-family: 'NixieOne-Regular', "Helvetica Neue", Arial, sans-serif;
+    margin: 3px 0 3px;
+}
+
+
+
+
+/*fonts*/
+@font-face {
+    font-family: 'NixieOne-Regular';
+    src: url('fonts/NixieOne/NixieOne-Regular.eot');
+    src: url('fonts/NixieOne/NixieOne-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/NixieOne/NixieOne-Regular.woff') format('woff'),
+         url('fonts/NixieOne/NixieOne-Regular.ttf') format('truetype'),
+         url('fonts/NixieOne/NixieOne-Regular.svg#NixieOne-Regular') format('svg');
+  }
+  
+  .fontpro,.fontpro-36235 {
+    font-family: 'NixieOne-Regular',sans-serif;
+  }
+
+  @font-face {
+    font-family: 'FrederickatheGreat-Regular';
+    src: url('fonts/FrederickaTheGreat/FrederickatheGreat-Regular.eot');
+    src: url('fonts/FrederickaTheGreat/FrederickatheGreat-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/FrederickaTheGreat/FrederickatheGreat-Regular.woff') format('woff'),
+         url('fonts/FrederickaTheGreat/FrederickatheGreat-Regular.ttf') format('truetype'),
+         url('fonts/FrederickaTheGreat/FrederickatheGreat-Regular.svg#FrederickatheGreat-Regular') format('svg');
+  }
+  
+  .fontpro,.fontpro-36042 {
+    font-family: 'FrederickatheGreat-Regular',sans-serif;
+  }
+
+  @font-face {
+    font-family: 'GiveYouGlory';
+    src: url('GiveYouGlory.eot');
+    src: url('GiveYouGlory.eot?#iefix') format('embedded-opentype'),
+         url('GiveYouGlory.woff') format('woff'),
+         url('GiveYouGlory.ttf') format('truetype'),
+         url('GiveYouGlory.svg#GiveYouGlory') format('svg');
+  }
+  
+  .fontpro,.fontpro-36150 {
+    font-family: 'GiveYouGlory',sans-serif;
+  }
+
+  @font-face {
+    font-family: 'LovedbytheKing';
+    src: url('fonts/LovedByTheKing/LovedbytheKing.eot');
+    src: url('fonts/LovedByTheKing/LovedbytheKing.eot?#iefix') format('embedded-opentype'),
+         url('fonts/LovedByTheKing/LovedbytheKing.woff') format('woff'),
+         url('fonts/LovedByTheKing/LovedbytheKing.ttf') format('truetype'),
+         url('fonts/LovedByTheKing/LovedbytheKing.svg#LovedbytheKing') format('svg');
+  }
+  
+  .fontpro,.fontpro-35970 {
+    font-family: 'LovedbytheKing',sans-serif;
+  }
+
+  @font-face {
+    font-family: 'MarckScript-Regular';
+    src: url('MarckScript-Regular.eot');
+    src: url('MarckScript-Regular.eot?#iefix') format('embedded-opentype'),
+         url('MarckScript-Regular.woff') format('woff'),
+         url('MarckScript-Regular.ttf') format('truetype'),
+         url('MarckScript-Regular.svg#MarckScript-Regular') format('svg');
+  }
+  
+  .fontpro,.fontpro-36279 {
+    font-family: 'MarckScript-Regular',sans-serif;
+  }
+
+  @font-face {
+    font-family: 'CarroisGothicSC-Regular';
+    src: url('fonts/CarroisGothicSC/CarroisGothicSC-Regular.eot');
+    src: url('fonts/CarroisGothicSC/CarroisGothicSC-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/CarroisGothicSC/CarroisGothicSC-Regular.woff') format('woff'),
+         url('fonts/CarroisGothicSC/CarroisGothicSC-Regular.ttf') format('truetype'),
+         url('fonts/CarroisGothicSC/CarroisGothicSC-Regular.svg#CarroisGothicSC-Regular') format('svg');
+  }
+  
+  .fontpro,.fontpro-35628 {
+    font-family: 'CarroisGothicSC-Regular',sans-serif;
+  }
+
+
+
+
+button{
+    font-size: x-large;
+    border-radius: 6px;
+    border: solid 2px;
+    border-color: rgb(6, 28, 100);
+    background-color: cornflowerblue;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+button:hover:enabled{
+    border: solid 3px;  
+    background-color: white;
+    color: rgb(6, 28, 100);
+}
+button:active{
+    border: solid 2px;  
+    background-color: white;
+    color: rgb(6, 28, 100);
+    transform: translateY(4px);
+}
+button:disabled{
+    background-color: rgb(133, 133, 133);
+    color: black;
+}
+
+/*code from guessing game
+.center {
+  text-align: center;
+}
+ul {
+    list-style: none;
+}
+.guess {
+    margin: 0 auto 0 auto;
+    display: inline;
+    text-align: center;
+    border-radius: 8px;
+    border: ridge;
+    font-size: 60px;
+    padding: 0 25px;
+    margin: 10px 10px 800px;
+}
+img {
+    display: inline;
+    width: 200px;
+    height: 100px;
+ }
+button{
+    font-variant: small-caps;
+    font-size: x-large;
+    border-radius: 6px;
+    border: solid 2px;
+    border-color: rgb(6, 28, 100);
+    background-color: cornflowerblue;
+    text-align: center;
+    padding: 14px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+button:hover:enabled{
+    border: solid 3px;  
+    background-color: white;
+    color: rgb(6, 28, 100);
+}
+button:active{
+    border: solid 2px;  
+    background-color: white;
+    color: rgb(6, 28, 100);
+    transform: translateY(4px);
+}
+button:disabled{
+    background-color: rgb(133, 133, 133);
+    color: black;
+}
+#reset{
+    background-color: white;
+    color: rgb(83, 3, 3);
+    border-color: rgb(83,3,3);
+}
+#reset:hover{
+    border-color: rgb(83, 3, 3);
+    background-color: rgb(250, 3, 3);
+    color: white;
+}
+#hint{
+    background-color: white;
+    color: rgb(0, 48, 6);
+    border-color: rgb(0, 48, 6);
+}
+#hint:disabled{
+    background-color: rgb(133, 133, 133);
+    color: black;
+}
+#hint:hover:enabled{
+    border-color: rgb(0, 48, 6);
+    background-color: rgb(0, 182, 24);
+    color: white;
+}
+#hint-reminder{
+    display: none;
+    padding-top: 10px;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url('chalkboard.jpg'); 
+    background-size: cover;
+}
+.winning{
+    background-image: url('fireworks.gif'); 
+}
+#losing{
+    display: none;
+    width: 528px;
+    height: 292px;
+    position: absolute;
+    top: -10px;
+    left: -185px;
+}
+#menu-btns{
+    padding: 10px;
+    font-size: 16px;
+    margin: 0 auto;
+}
+#input-parent{
+    position: relative;
+    width: 160px;
+    margin: 0 auto 0 auto;
+    padding-bottom: 40px;
+}
+input::placeholder {
+    font-variant: small-caps;
+    font-size: 20px;
+    transform: translateY(-70%);
+}
+input:focus{
+    border-radius: 80%;  
+}
+#player-input{
+    font-variant: small-caps;
+    height: 120px;
+    width: 160px;
+    border: solid  2px rgb(2, 2, 68);
+    border-radius: 80%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 70px;
+}
+#submit{
+    position: absolute;
+    top: 83px;
+    left: 100px;
+    border-radius: 70%;
+    height: 60px;
+    line-height: 20px;
+}
+#subtitle{
+    font-size: 55px;
+    font-weight: 500;
+    font-family: 'amaticbold', Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 0px 30px;
+}
+#title{
+    font-size: 90px;
+    font-family: 'amaticbold', Georgia, 'Times New Roman', Times, serif;
+    padding-top: 20px;
+}
+#app{
+    text-align: center;
+    margin: 5px auto 0px;
+    background-color: rgba(255, 255, 255, 0.88);
+    border: solid 2px;
+    border-color: cornflowerblue;
+    padding-bottom: 8%;
+}
+#footer {
+    width: 100%;
+    border-top: solid 2px black;
+    background-color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+@font-face {
+    font-family: 'amaticbold';
+    src: url('amatic-bold-webfont.woff2') format('woff2'),
+         url('amatic-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
