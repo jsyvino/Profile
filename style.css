@@ -33,7 +33,7 @@
     color: rgb(0, 180, 180);
 }
 
-#linkedin, #medium{
+.outside-link{
     float: left;
     margin: 10px 5px auto;
     width: 30px;
@@ -46,11 +46,11 @@
 #medium{
     background: white;
 }
-#linkedin:hover, #medium:hover{
+.outside-link:hover{
     border: solid 3px; 
     border-color: rgb(29, 255, 21);
 }
-#linkedin:active, #medium:active{
+.outside-link:active{
     border: solid 2px;  
     transform: translateY(4px); 
     border-color: rgb(29, 255, 21);
@@ -101,9 +101,16 @@
 }
 .fact{
     font-family: 'NixieOne-Regular', "Helvetica Neue", Arial, sans-serif;
+    color: rgb(48, 48, 48);
+    text-decoration: none;
 }
-#funfacts:hover{
+#funfacts:hover, .fact:hover{
     font-style: oblique;
+    text-decoration: none;
+}
+#funfacts {
+    font-weight: bold;
+    color: darkblue
 }
 .funfact{
     display: none;
@@ -143,7 +150,7 @@
     color: rgb(0, 180, 180);
 }
 #projects img:hover{
-    border: solid 4px;
+    border: solid 2px;
     border-color: rgb(0, 180, 180);
 }
 /*#projects .col-sm-4:active{
